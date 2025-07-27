@@ -1,0 +1,83 @@
+/* Style général pour le conteneur racine */
+.root {
+    -fx-background-color: #f4f4f4; /* Couleur de fond légère */
+    -fx-font-family: "Arial", sans-serif; /* Police par défaut */
+}
+
+/* Style pour les labels principaux */
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Couleur de texte sombre */
+}
+
+.list-header-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555555;
+    -fx-padding: 10px 0 0 0; /* Espace au-dessus */
+}
+
+/* Style pour les labels du formulaire */
+.label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #444444;
+}
+
+/* Style pour les champs de texte */
+.text-field {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #007bff; /* Couleur de bordure au focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,123,255,0.4), 5, 0, 0, 0);
+}
+
+/* Style pour le bouton d'ajout */
+.add-button {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand; /* Curseur main au survol */
+}
+
+.add-button:hover {
+    -fx-background-color: #218838;
+}
+
+/* Style pour la ListView */
+.list-view {
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 3px;
+    -fx-background-color: white;
+}
+
+/* Style pour les cellules de la ListView */
+.list-cell {
+    -fx-padding: 8px;
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+}
+
+/* Style pour les cellules paires*/
+.list-cell:odd {
+    /* -fx-background-color: #f9f9f9; Légère alternance de couleur */
+}
+
+/* Style pour la cellule sélectionnée */
+.list-cell:filled:selected {
+    -fx-background-color: #007bff; /* Bleu pour la sélection */
+    -fx-text-fill: white;
+}
+
+/* Style pour la cellule survolée (non sélectionnée) */
+.list-cell:filled:hover {
+    -fx-background-color: #e9ecef; /* Gris clair au survol */
+    -fx-text-fill: #333333;
+}
